@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOPIFY</title>
+    <link rel="stylesheet" href="shop.css">
+     <link rel="icon" type="image icon" href="./shop.jpeg">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+</head>
+<body bgcolor="grey">
+    <div class="navbar">
+    <div class="nav-links">
+        <a class="navbar-brand" href="#">
+      <img src="./shop.jpeg" alt="" style="width:30px;" class="rounded-pill">
+    </a>
+      <a href="/" class="active">Home</a>
+      <a href="/about">About</a>
+      <a href="/services">Services</a>
+      <a href="/contact">Contact</a>
+    </div>
+    <div class="search-box">
+      <input type="text" placeholder="Search...">
+      <button type="submit">Search</button>
+    </div>
+  </div>
+  <br><br>
+    
+      <video src="./shop intro.mp4" autoplay width="100% "  height="50%"></video>
+      <br><br><br>
+      <center>
+      <div><h2  class="a"> 🛍️welcome our shopify🛒 </h2></div>
+     <P><i>Shopify is a popular e-commerce platform that allows individuals and businesses to create online stores to sell products and services. It offers customizable templates, secure payment options, inventory management, and marketing tools, making it easy for anyone to launch and grow an online business without needing advanced technical skills.</i></P>
+
+      <br>
+      <br>
+        
+      <div><h2  class="a">📣 our brand new collections💃 </h2></div>
+       <div class="grid"></h1>
+    <div><h2>  brand dress  </h2> <img class="b" src="./celio.jpeg"  alt="" >            <p>Shopify offers stylish dresses through various online stores, featuring trendy designs, quality fabrics, and options for every occasion.</p><br> Price $4<button class="add"  onclick="addtocart"> add to cart🛒💸💰</button> </div>
+    <div><h2> electronics & gadgets </h2> <img class="b" src="./electronics.jpeg" alt="" >  <p>Shopify electronics stores offer gadgets, accessories, and devices like phones, laptops, and smart tech with secure checkout and fast delivery.</p><br> Price $4<button  class="add" onclick="addtocart"> add to cart🛒💸💰</button></div>
+    <div><h2> hardware things </h2> <img class="b" src="./hardware.jpeg" alt="">                   <p>Shopify hardware stores sell tools, equipment, and building supplies online, offering quality products for construction, repair, and home improvement needs.</p><br> Price $4<button  class="add" onclick="addtocart"> add to cart🛒💸💰</button></div>
+     <div><h2>groceries </h2> <img class="b"  src="./grocery.jpeg" alt="">               <p>Shopify grocery stores offer fresh produce, packaged foods, and daily essentials online, with easy ordering, fast delivery, and secure payments.</p><br> Price $4<button class="add" onclick="addtocart"> add to cart🛒💸💰</button> </div>
+    <div><h2> kitchen utensils  </h2> <img class="b" src="./kitchen.jpeg"alt="" height="180px" width="200px">            <p>Shopify furniture stores feature stylish, durable pieces for homes and offices, offering easy browsing, secure checkout, and convenient home delivery options.</p><br> Price $4<button class="add" onclick="addtocart"> add to cart🛒💸💰</button></div>
+    <div><h2> furnitures</h2> <img class="b" src="./furniture.jpeg" alt="">                           <p>Shopify kitchen utensil stores offer high-quality tools like knives, spoons, and cookware, perfect for cooking enthusiasts and everyday kitchen needs. </p> <br> Price $4<button class="add" onclick="addtocart"> add to cart🛒💸💰</button></div>
+</div><br><br>
+
+     <div><h2 class="a">😊🤝Customer Feedback😎👌🔥</h2></div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Feedback</th>
+        <th>Rating</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Alice Johnson</td>
+        <td>alice@example.com</td>
+        <td>Great quality and fast delivery!</td>
+        <td>★★★★★</td>
+      </tr>
+      <tr>
+        <td>Mark Lee</td>
+        <td>mark@example.com</td>
+        <td>Good product but packaging was damaged.</td>
+        <td>★★★☆☆</td>
+      </tr>
+      <tr>
+        <td>Sara Ahmed</td>
+        <td>sara@example.com</td>
+        <td>Excellent customer service and support.</td>
+        <td>★★★★☆</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br><br>
+   <div><h2 class="a">😉Customer Details Form💬🧾</h2></div>
+
+  <form id="customerForm" onsubmit="addCustomer(event)">
+    <input type="text" id="name" placeholder="Full Name" required><br>
+    <input type="email" id="email" placeholder="Email Address" required><br>
+    <input type="text" id="phone" placeholder="Phone Number" required><br>
+    <input type="text" id="address" placeholder="Address" required><br>
+    <input type="text" id="Feedback" placeholder="Feedback" required><br>
+    
+    <button type="submit" class="btn btn-primary" onclick="alert('your order has been placed')">Submit</button>
+  </form>
+
+  <div class="marquee"><img src="./bubu-bubu-dudu.gif" alt="" height="200px">
+
+                    <img src="./bubu-dudu-sseeyall.webp" alt="">
+                     <img src="./baby-cute.webp" alt="">
+</div>
+
+    <footer style="background-color: #222; color: #fff; padding: 40px 0;">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; justify-content: space-between; padding: 0 20px;">
+    
+    <!-- Contact Details -->
+    <div style="flex: 1 1 250px; margin-bottom: 20px;">
+      <h3 class="d" >Contact Us</h3>
+      <p>Email: shopify@example.com</p>
+      <p>Phone: +123 456 7890</p>
+      <p>Address: 123 Main Street, Pune, india</p>
+    </div>
+
+    <!-- Terms and Conditions -->
+    <div style="flex: 1 1 250px; margin-bottom: 20px;">
+      <h3 class="d">Quick Links</h3>
+      <ul style="list-style: none; padding: 0;">
+        <li><a href="/terms" style="color: #ccc; text-decoration: none;">Terms & Conditions</a></li>
+        <li><a href="/privacy" style="color: #ccc; text-decoration: none;">Privacy Policy</a></li>
+        <li><a href="/about" style="color: #ccc; text-decoration: none;">About Us</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Icons -->
+    <div style="flex: 1 1 250px; margin-bottom: 20px;">
+      <h3 class="d">Follow Us</h3>
+      <a href="#" style="color: #ccc; margin-right: 10px;"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" style="color: #ccc; margin-right: 10px;"><i class="fab fa-twitter"></i></a>
+      <a href="#" style="color: #ccc; margin-right: 10px;"><i class="fab fa-instagram"></i></a>
+      <a href="#" style="color: #ccc;"><i class="fab fa-linkedin-in"></i></a>
+    </div>
+  </div>
+
+  <!-- Bottom Footer -->
+  <div style="text-align: center; padding-top: 20px; border-top: 1px solid #444;">
+    <p style="margin: 0;">&copy; 2025 shopify. All rights reserved.</p>
+  </div>
+</footer>
+  <br>
+  <br>
+  
+  
+
+
+
+
+
+
+      </center>
+
+
+
+
+
+
+
+    </body>
+
+</html>

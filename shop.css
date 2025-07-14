@@ -1,0 +1,221 @@
+body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #333;
+      padding: 10px 20px;
+      flex-wrap: wrap;
+    }
+
+    .navbar a {
+      color: #f2f2f2;
+      text-decoration: none;
+      padding: 10px 16px;
+      display: inline-block;
+      transition: background 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: #575757;
+    }
+
+    .navbar a.active {
+      background-color: #04AA6D;
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .search-box {
+      display: flex;
+      align-items: center;
+    }
+
+    .search-box input[type="text"] {
+      padding: 6px;
+      border: none;
+      border-radius: 4px 0 0 4px;
+      outline: none;
+    }
+
+    .search-box button {
+      padding: 6px 10px;
+      background-color: #04AA6D;
+      color: white;
+      border: none;
+      border-radius: 0 4px 4px 0;
+      cursor: pointer;
+    }
+
+    .search-box button:hover {
+      background-color: #038e5a;
+    }
+
+    @media (max-width: 600px) {
+      .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .nav-links {
+        width: 100%;
+        flex-direction: column;
+      }
+
+      .search-box {
+        width: 100%;
+        margin-top: 10px;
+      }
+
+      .search-box input[type="text"] {
+        width: 70%;
+      }
+
+      .search-box button {
+        width: 30%;
+      }
+    }
+    .a:hover{
+        background-image: url(./flower.jpeg);
+        z-index: -1;
+    }
+    .grid{
+        display: grid;
+        color: rgb(187, 161, 161);
+         grid-template-columns:repeat(3,1fr);
+        grid-template-columns:repeat(3,1fr);
+        gap: 20px;
+        background-color: rgba(83, 83, 82, 0.9);
+        border: 1px,solid,yellow;
+        padding: 20px;
+        fontsize:10px;
+        justify-content: center;
+       
+                
+       }
+       .img{
+        height: 200px;
+        width: 300px;
+        background-color:rgb(red, green, blue);
+        
+       }
+       .grid img:hover{
+        scale: 0.8;
+        transform: rotate(3deg) rotateX(12deg) rotateY(16deg);
+        box-shadow: 5px 7px 5px rgb(81, 199, 91)  ;
+        
+       }
+       .add:hover{
+        background-color: red;
+       }
+       table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 12px;
+      text-align: left;
+      
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+    td:hover{
+        background-color: green;
+    }
+    .customerform{
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+
+    form {
+      margin-bottom: 30px;
+    }
+
+    input {
+      padding: 8px;
+      margin: 5px 0;
+      width: 100%;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #04AA6D;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: left;
+    }
+
+    th {
+      background-color: #f4f4f4;
+    }
+
+    tr:nth-child(even) {
+      background-color: #fafafa;
+    }
+    function addCustomer(event) {
+      event.preventDefault();
+
+      
+      const name=document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const phone = document.getElementById('phone').value;
+      const address = document.getElementById('address').value;
+
+      const tableBody = document.getElementById('customerTableBody');
+      const row = document.createElement('tr');
+      row.innerHTML = `
+        <td>${name}</td>
+        <td>${email}</td>
+        <td>${phone}</td>
+        <td>${address}</td>;
+      
+      tableBody.appendChild(row);
+
+      
+    }
+.marquee{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+.d:hover{
+    background-color: burlywood;
+}
