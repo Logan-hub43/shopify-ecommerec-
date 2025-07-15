@@ -205,7 +205,7 @@ body {
   width: 100%;
   overflow: hidden;
   white-space: nowrap;
-  animation: scroll-left 10s linear infinite;
+  animation: scroll-left 20s linear infinite;
 }
 
 @keyframes scroll-left {
