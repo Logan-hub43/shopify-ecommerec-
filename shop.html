@@ -78,15 +78,82 @@
     </tbody>
   </table>
 
-  <br><br>
-   <div><h2 class="a">😉Customer Details Form💬🧾</h2></div>
+   <div class="form-container">
+    <h2 class="f">🧾 Customer Details</h2>
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="email" id="email" placeholder="Email">
+    <input type="tel" id="phone" placeholder="Phone Number">
+    <input type="text" id="address" placeholder="Address">
+    <button onclick="saveCustomer()">Submit</button>
 
-  <form id="customerForm" onsubmit="addCustomer(event)">
-    <input type="text" id="name" placeholder="Full Name" required><br>
-    <input type="email" id="email" placeholder="Email Address" required><br>
-    <input type="text" id="phone" placeholder="Phone Number" required><br>
-    <input type="text" id="address" placeholder="Address" required><br>
-    <input type="text" id="Feedback" placeholder="Feedback" required><br>
+    <div class="customer-list" id="customerList">
+      <h3>Saved Customers:</h3>
+    </div>
+  </div>
+
+  <script>
+    const customerList = document.getElementById("customerList");
+
+    function saveCustomer() {
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const phone = document.getElementById("phone").value.trim();
+      const address = document.getElementById("address").value.trim();
+
+      if (!name || !email || !phone || !address) {
+        alert("Please fill all fields!");
+        return;
+      }
+
+      const customerCard = document.createElement("div");
+      customerCard.className = "customer-card";
+      customerCard.innerHTML = `
+        <strong>Name:</strong> ${name}<br>
+        <strong>Email:</strong> ${email}<br>
+        <strong>Phone:</strong> ${phone}<br>
+        <strong>Address:</strong> ${address}
+      `;
+
+      customerList.appendChild(customerCard);
+
+      // Clear fields after submit
+      document.getElementById("name").value = "";
+      document.getElementById("email").value = "";
+      document.getElementById("phone").value = "";
+      document.getElementById("address").value = "";
+    }
+    function validateLogin() {
+      const username = document.getElementById("username").value.trim();
+      const password = document.getElementById("password").value.trim();
+      const message = document.getElementById("message");
+
+      // Clear previous messages
+      message.textContent = "";
+      message.className = "";
+
+      if (username === "" || password === "") {
+        message.textContent = "Please fill in all fields.";
+        message.className = "error";
+        return;
+      }
+
+      if (username.length < 4) {
+        message.textContent = "Username must be at least 4 characters.";
+        message.className = "error";
+        return;
+      }
+
+      if (password.length < 5) {
+        message.textContent = "Password must be at least 5 characters.";
+        message.className = "error";
+        return;
+      }
+
+      // Success message
+      message.textContent = "Login successful!";
+      message.className = "success";
+    }
+  </script>
     
     <button type="submit" class="btn btn-primary" onclick="alert('your order has been placed')">Submit</button>
   </form>
